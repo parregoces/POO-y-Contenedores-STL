@@ -1,20 +1,28 @@
 #include <iostream>
+#include "funciones.h"
 
-class MiClase {
-public:
-    MiClase(int valor) {
-        // Constructor de la clase MiClase
-        this->valor = valor; // Uso de 'this' para asignar a la variable de miembro
-    }
-
-private:
-    int valor;
-};
+using namespace std;
 
 int main() {
-    MiClase obj(42); // Llama al constructor con un valor
+    unsigned int x;
 
-    //obj.mostrarValor(10); // Llama a la función mostrarValor con un valor
+    while(true){
 
-    return 0;
+        cout<<"Ingrese el valor de x: "<<endl;
+        cin >>x;
+
+        switch(x){
+        case 1:
+            secuenciales();
+            break;
+        case 2:
+            asociativos();
+            break;
+        case 3:
+            adaptativos();
+            break;
+        default:
+            break;
+        }
+    }
 }
