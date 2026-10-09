@@ -4,6 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        Adaptativos.cpp \
+        Asociativos.cpp \
+        Secuenciales.cpp \
         main.cpp
 
-HEADERS +=
+HEADERS += \
+    funciones.h
